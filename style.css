@@ -31,11 +31,14 @@ ul > li {
 /*PARALLAX EFFECT*/
 
 #restaurantImg {
-    width: 100%;
-    height: 80vh;
-    background-image: url(assets/zakaria-zayane-0uAVsDcyD0M-unsplash.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+	width: 100%;
+	height: 80vh;
+	background-image: url(assets/zakaria-zayane-0uAVsDcyD0M-unsplash.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
 }
 
 /*MAIN*/
@@ -74,9 +77,24 @@ ol > li {
     font: 1.3rem Montserrat, sans-serif ;
 }
 
+h3 {
+	font: 2rem Montserrat bold, sans-serif;
+}
+
+.startersFlex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.mainsFlex {
+	display: flex;
+	justify-content: space-around;
+}
+
 .borderDish {
+	border-color: black;
     border-style: solid;
-    border-width: medium;
+    border-width: 1px;
     width: 20vw;
 }
 
@@ -87,4 +105,5 @@ img {
     height: 15vw;
     object-fit: cover;
     margin-left: 13%;
+	border-radius: 30pc;
 }

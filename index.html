@@ -2,59 +2,104 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Petrograd</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/cew3wst.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Restaurant Petrograd</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/cew3wst.css">
 </head>
 
 <body>
-    <nav>
-        <div id="navBar">
-            <!--LOGO OR NAME IN CURSIVE ON THE LEFT-->
-            <ul>
-                <li>HOME</li>
-                <li class="activeNav">MENU</li>
-                <li>DELIVERY</li>
-                <li>ABOUT</li>
-                <li>CONTACT</li>
-            </ul>
-        </div>
-    </nav>
+	<nav>
+		<div id="navBar">
+			<!--LOGO OR NAME IN CURSIVE ON THE LEFT-->
+			<ul>
+				<li>HOME</li>
+				<li class="activeNav">MENU</li>
+				<li>DELIVERY</li>
+				<li>ABOUT</li>
+				<li>CONTACT</li>
+			</ul>
+		</div>
+	</nav>
 
-    <main>
-        <!--MAKE THIS INTO A PARALLAX EFFECT-->
-        <div id="restaurantImg"></div>
-        <h1>Restaurant Petrograd</h1>
-        <p id="restaurantDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<main>
+		<div id="restaurantImg"></div>
+		<h1>Restaurant Petrograd</h1>
+		<p id="restaurantDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <h2>MENU</h2>
-        <ol>
-            <li>Starters</li>
-            <li>Main courses</li>
-            <li>Side dishes</li>
-            <li>Desserts</li>
-            <li>Drinks</li>
-        </ol>
+		<h2>MENU</h2>
+		<ol>
+			<li>Starters</li>
+			<li>Main courses</li>
+			<li>Side dishes</li>
+			<li>Desserts</li>
+			<li>Drinks</li>
+		</ol>
 
-        <h3>Starters</h3>
-        <div class="borderDish">
-            <p><b>Bulgarian Farmers Soup</b></p>
-            <img src="assets/borsjtj.jpg">
-            <p>50kr</p>
-            <p>Cauceskus bulgarske bondesuppe.</p>
-            <p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+		<h3>Starters</h3>
+		<div class="startersFlex">
+			<div class="borderDish">
+				<p><b>Russian Ringbread</b></p>
+				<img src="assets/borsjtj.jpg">
+				<p>29kr</p>
+				<p>Russisk ringbrød af Karapatisk mel.</p>
+				<p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
+			</div>
 
-        </div>
+			<div class="borderDish">
+				<p><b>Cabanossi with beetrootcreme</b></p>
+				<img src="assets/borsjtj.jpg">
+				<p>49kr</p>
+				<p>Cabanossi med rødbedecreme og løg</p>
+				<p>Cabanossi med rødbedecreme og creme er egentlig en forret, men kammerat Vladimir elskede denne ret så højt, at han forbød restauranter i Krigien at sælge det som andet end en hovedret. Vi anbefaler det dog som forret, inden en god Bortsjs. Skylles helst ned med vodka.</p>
+			</div>
 
-        <h3>Dish Name</h3>
-        <p>Name: name of the dish</p>
-        <p>Short Description</p>
-        <p>Price</p>
+			<div class="borderDish">
+				<p><b>Bulgarian Farmers Soup</b></p>
+				<img src="assets/borsjtj.jpg">
+				<p>99kr</p>
+				<p>Cauceskus bulgarske bondesuppe.</p>
+				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+			</div>
+		</div>
+
+		<h3>Main courses</h3>
+		<div class="mainsFlex">
+			<div class="borderDish">
+				<p><b>Bulgarian Farmers Soup</b></p>
+				<img src="assets/borsjtj.jpg">
+				<p>29kr</p>
+				<p>Cauceskus bulgarske bondesuppe.</p>
+				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+			</div>
+
+			<div class="borderDish">
+				<p><b>Bulgarian Farmers Soup</b></p>
+				<img src="assets/borsjtj.jpg">
+				<p>99kr</p>
+				<p>Cauceskus bulgarske bondesuppe.</p>
+				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+			</div>
+
+			<div class="borderDish">
+				<p><b>Bulgarian Farmers Soup</b></p>
+				<img src="assets/borsjtj.jpg">
+				<p>99kr</p>
+				<p>Cauceskus bulgarske bondesuppe.</p>
+				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
+			</div>
+		</div>
+
+		<h3>Sidedishes</h3>
+
+		<h3>Desserts</h3>
+
+		<h3>Drinks</h3>
 
 
-        <!--        Name
+
+		<!--        Name
             Image
             Short Description
             Price
@@ -62,7 +107,7 @@
             Discount price
             Vegetarian status-->
 
-    </main>
+	</main>
 
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 </body></html>
