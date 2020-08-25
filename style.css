@@ -1,0 +1,90 @@
+/*
+COLORS
+#BF2C38 middle red
+#590F1D dark red
+#F2AE2E yellow mustard
+#BFA98E beige
+#F2594B light red
+*/
+
+
+body {margin: 0;}
+
+/*NAVIGATION*/
+
+#navBar {background: #590F1D;}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 1.2rem;
+    text-align: right;
+}
+
+ul > li {
+    display: inline;
+    padding: 0 1.5rem;
+    color: white;
+    font: 1.2rem grenadine-mvb;
+}
+
+/*PARALLAX EFFECT*/
+
+#restaurantImg {
+    width: 100%;
+    height: 80vh;
+    background-image: url(assets/zakaria-zayane-0uAVsDcyD0M-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*MAIN*/
+
+h1 {
+    font: 4rem mina, serif;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+
+#restaurantDescr {
+    text-align: center;
+    margin: 0 20%;
+}
+
+h2 {
+    margin-top: 5rem;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+p {
+    font-family: Montserrat;
+    font-weight: 300;
+}
+
+ol {
+    text-align: center;
+    list-style: none;
+}
+
+ol > li {
+    display: inline;
+    padding: 2rem;
+    font: 1.3rem Montserrat, sans-serif ;
+}
+
+.borderDish {
+    border-style: solid;
+    border-width: medium;
+    width: 20vw;
+}
+
+.borderDish > p {text-align: center;}
+
+img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    margin-left: 13%;
+}
