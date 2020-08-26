@@ -77,42 +77,74 @@ ol > li {
     font: 1.3rem Montserrat, sans-serif ;
 }
 
+/*GRID FOR THE SECTIONS*/
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(17vw, 1fr));
+    grid-gap: 3vw;
+    margin: 5% 10%;
+}
+
 h3 {
-	font: 2rem Montserrat bold, sans-serif;
+    grid-column: 1/5;
+    text-align: center;
+    margin-bottom: -5vh;
+    margin-top: 0;
+    font: 2rem Montserrat, sans-serif;
+    font-weight: 700;
+    font-style: italic;
 }
 
-.startersFlex {
-	margin: 0 5vw;
-	display: flex;
-	justify-content: space-around;
+h4 {
+    font: 1.4rem Montserrat, sans-serif;
+    font-weight: 600;
+    font-style: italic;
 }
 
-.mainsFlex {
-	display: flex;
-	justify-content: space-around;
+.foodItem p {
+    text-align: center;
+    margin: 4%;
 }
 
-.borderDish {
-	border-style: none;
-	width: 20vw;
+.foodItem p:last-of-type {font-style: italic;}
+
+.foodItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	width: 17vw;
 	background-color: rgba(191, 169, 142, 0.1);
 	transition: 1s;
 }
 
-.borderDish > p {text-align: center;}
-
-img {
-    width: 15vw;
-    height: 15vw;
-    object-fit: cover;
-    margin-left: 13%;
-	border-radius: 30pc;
-}
-
-.borderDish:hover {
+.foodItem:hover {
 	background-color: rgba(191, 169, 142, 0.15);
 	transition: 1s;
-	cursor: pointer;
 	box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.15);
+}
 
+.imgFood {
+    width: 13vw;
+    height: 13vw;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.orderBtn {
+    padding: 0.75rem 2rem;
+    margin: 5% 0.25rem;
+    border-radius: 5%;
+    background-color: rgba(242, 174, 46, 0.75);
+    color: white;
+    border: none;
+    font: 1.5rem Montserrat, sans-serif;
+    font-weight: 700;
+}
+
+.orderBtn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: rgba(242, 174, 46, 1);
+    cursor: pointer;
 }

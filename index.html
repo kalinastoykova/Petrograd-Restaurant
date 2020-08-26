@@ -2,112 +2,200 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Restaurant Petrograd</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://use.typekit.net/cew3wst.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Petrograd</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/cew3wst.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    </style>
 </head>
 
 <body>
-	<nav>
-		<div id="navBar">
-			<!--LOGO OR NAME IN CURSIVE ON THE LEFT-->
-			<ul>
-				<li>HOME</li>
-				<li class="activeNav">MENU</li>
-				<li>DELIVERY</li>
-				<li>ABOUT</li>
-				<li>CONTACT</li>
-			</ul>
-		</div>
-	</nav>
+    <nav>
+        <div id="navBar">
+            <!--LOGO OR NAME IN CURSIVE ON THE LEFT-->
+            <ul>
+                <li>HOME</li>
+                <li class="activeNav">MENU</li>
+                <li>DELIVERY</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+    </nav>
 
-	<main>
-		<div id="restaurantImg"></div>
-		<h1>Restaurant Petrograd</h1>
-		<p id="restaurantDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <main>
+        <div id="restaurantImg"></div>
+        <h1>Restaurant Petrograd</h1>
+        <p id="restaurantDescr">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-		<h2>MENU</h2>
-		<ol>
-			<li>Starters</li>
-			<li>Main courses</li>
-			<li>Side dishes</li>
-			<li>Desserts</li>
-			<li>Drinks</li>
-		</ol>
+        <h2>MENU</h2>
+        <ol>
+            <li>Starters</li>
+            <li>Main courses</li>
+            <li>Side dishes</li>
+            <li>Desserts</li>
+            <li>Drinks</li>
+        </ol>
 
-		<h3>Starters</h3>
-		<div class="startersFlex">
-			<div class="borderDish">
-				<p><b>Russian Ringbread</b></p>
-				<img src="assets/borsjtj.jpg">
-				<p class="priceTag">29kr</p>
-				<p>Russisk ringbrød af Karapatisk mel.</p>
-				<p>Russisk ringbrød efter en klassisk opskrift fra Karapatien. Dejen blandes koldhæver 30 dage, inde brødet bages over bål. Meget sprødt, godt med Karapatisk bjerggedsmør.</p>
-			</div>
+        <div class="gridContainer">
+            <h3>Starters</h3>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-			<div class="borderDish">
-				<p><b>Cabanossi with beetrootcreme</b></p>
-				<img src="assets/borsjtj.jpg">
-				<p>49kr</p>
-				<p>Cabanossi med rødbedecreme og løg</p>
-				<p>Cabanossi med rødbedecreme og creme er egentlig en forret, men kammerat Vladimir elskede denne ret så højt, at han forbød restauranter i Krigien at sælge det som andet end en hovedret. Vi anbefaler det dog som forret, inden en god Bortsjs. Skylles helst ned med vodka.</p>
-			</div>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-			<div class="borderDish">
-				<p><b>Caviar bruschetta</b></p>
-				<img src="assets/borsjtj.jpg">
-				<p>99kr</p>
-				<p>Cauceskus bulgarske bondesuppe.</p>
-				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
-			</div>
-		</div>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-		<h3>Main courses</h3>
-		<div class="mainsFlex">
-			<div class="borderDish">
-				<p><b>Bulgarian Farmers Soup</b></p>
-				<img src="assets/borsjtj.jpg">
-				<p>29kr</p>
-				<p>Cauceskus bulgarske bondesuppe.</p>
-				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
-			</div>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-			<div class="borderDish">
-				<p><b>Bulgarian Farmers Soup</b></p>
-				<img src="assets/borsjtj.jpg">
-				<p>99kr</p>
-				<p>Cauceskus bulgarske bondesuppe.</p>
-				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
-			</div>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-			<div class="borderDish">
-				<p><b>Bulgarian Farmers Soup</b></p>
-				<img src="assets/borsjtj.jpg">
-				<p>99kr</p>
-				<p>Cauceskus bulgarske bondesuppe.</p>
-				<p>Da Caucesku var i færd med at skrive sit navn med højhuse, var han nødt til at give håndværkerne solid kost, så de kunne arbejde 18 timer i døgnet, 7 dage om ugen: Bulgarsk bondesuppe. Suppen består af alt det bedste fra Bulgarien.</p>
-			</div>
-		</div>
+            <h3 id="main">Main course</h3>
+             <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-		<h3>Sidedishes</h3>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-		<h3>Desserts</h3>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-		<h3>Drinks</h3>
+            <h3 id="side">Side order</h3>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-		<!--        Name
-            Image
-            Short Description
-            Price
-            Sold out status
-            Discount price
-            Vegetarian status-->
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-	</main>
+            <h3 id="dessert">Dessert</h3>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
 
-	<script src="script.js"></script>
-</body></html>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
+
+            <h3 id="drink">Drinks</h3>
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
+
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
