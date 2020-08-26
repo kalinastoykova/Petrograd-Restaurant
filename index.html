@@ -34,19 +34,19 @@
 
         <h2>MENU</h2>
         <ol>
-            <li>Starters</li>
-            <li>Main courses</li>
-            <li>Side dishes</li>
-            <li>Desserts</li>
-            <li>Drinks</li>
+            <li><a href="#starters">Starters</a></li>
+            <li><a href="#main">Main courses</a></li>
+            <li><a href="#sides">Side dishes</a></li>
+            <li><a href="#dessert">Desserts</a></li>
+            <li><a href="#drink">Drinks</a></li>
         </ol>
 
         <div class="gridContainer">
-            <h3>Starters</h3>
+            <h3 id="starters">Starters</h3>
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
-                <p>99-,</p>
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
+                <p class="price">99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <button class="orderBtn">ORDER NOW</button>
@@ -54,8 +54,9 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
-                <p>99-,</p>
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
+                <p class="price saleStrike">99-,</p>
+                <p class="sale">59-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="orderBtn">ORDER NOW</button>
@@ -63,8 +64,18 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
-                <p>99-,</p>
+                <img src="assets/borsjtj.jpg" class="imgFood soldOut" alt="img">
+                <p class="soldOutP">SOLD OUT</p>
+                <p class="price">99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
+
+            <div class="foodItem soldOut">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
+                <p class="price">99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="orderBtn">ORDER NOW</button>
@@ -72,17 +83,8 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
-                <p>99-,</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button class="orderBtn">ORDER NOW</button>
-            </div>
-
-            <div class="foodItem">
-                <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
-                <p>99-,</p>
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
+                <p class="price">99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="orderBtn">ORDER NOW</button>
@@ -91,7 +93,7 @@
             <h3 id="main">Main course</h3>
              <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -100,7 +102,7 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -109,26 +111,17 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <button class="orderBtn">ORDER NOW</button>
             </div>
 
-            <h3 id="side">Side order</h3>
+            <h3 id="sides">Side order</h3>
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
-                <p>99-,</p>
-                <p>Lorem ipsum dolor sit amet, consectetur</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <button class="orderBtn">ORDER NOW</button>
-            </div>
-
-            <div class="foodItem">
-                <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -137,7 +130,7 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -146,7 +139,16 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
+                <p>99-,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="orderBtn">ORDER NOW</button>
+            </div>
+
+            <div class="foodItem">
+                <h4>Food item</h4>
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -156,7 +158,7 @@
             <h3 id="dessert">Dessert</h3>
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -165,7 +167,7 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -175,7 +177,7 @@
             <h3 id="drink">Drinks</h3>
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -184,7 +186,7 @@
 
             <div class="foodItem">
                 <h4>Food item</h4>
-                <img src="assets/borsjtj.jpg" class="imgFood">
+                <img src="assets/borsjtj.jpg" class="imgFood" alt="img">
                 <p>99-,</p>
                 <p>Lorem ipsum dolor sit amet, consectetur</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
