@@ -7,11 +7,11 @@ COLORS
 #F2594B light red
 */
 
-
 body {margin: 0;}
 html {scroll-behavior: smooth;}
-/*NAVIGATION*/
 
+
+/*NAVIGATION*/
 #navBar {background: #590F1D;}
 
 ul {
@@ -125,8 +125,6 @@ h4 {
     margin: 4%;
 }
 
-.foodItem p:last-of-type {font-style: italic;}
-
 .foodItem {
     display: flex;
     flex-direction: column;
@@ -160,33 +158,6 @@ h4 {
     top: 35%;
 }
 
-.saleStrike {
-    text-decoration: line-through;
-    background-color: rgba(191, 169, 142, 0.1);
-}
-
-.sale {
-    background-color: rgba(242, 89, 75, 0.5);
-    border-radius: 100%;
-    font-size: 1.5em;
-    padding: 1vh;
-    position: absolute;
-    right: 10%;
-    top: 35%;
-}
-
-.soldOut {
-    opacity: 0.5;
-}
-
-.soldOutP {
-    color: white;
-    font-size: 4em;
-    font-weight: bolder;
-    position: absolute;
-    top: 15%;
-}
-
 .orderBtn {
     padding: 0.75rem 2rem;
     margin: 5% 0.25rem;
@@ -196,6 +167,8 @@ h4 {
     border: none;
     font: 1.5rem Montserrat, sans-serif;
     font-weight: 700;
+    transition: 0.5s;
+
 }
 
 .orderBtn:hover {
