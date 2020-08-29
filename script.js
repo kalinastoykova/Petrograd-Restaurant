@@ -27,7 +27,8 @@ function showItem(myItem) {
     //fill the template with content
     myCopy.querySelector(".productName").textContent = myItem.name;
     myCopy.querySelector(".shortDesc").textContent = myItem.shortdescription;
-    myCopy.querySelector(".price").textContent = myItem.price;
+    myCopy.querySelector(".price").textContent = myItem.price + "-,";
+	myCopy.querySelector(".imgFood").src = largeImg;
 
 
     //apend
