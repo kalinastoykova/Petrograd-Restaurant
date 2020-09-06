@@ -7,6 +7,7 @@ CONTENT
 5. GRID
 6. COURSES
 7. FOOTER
+8. MODAL
 */
 
 
@@ -23,11 +24,18 @@ COLORS
 
 /*VARIABLES*/
 
-body {margin: 0;}
-html {scroll-behavior: smooth;}
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 /* 2. TOP NAVIGATION*/
-nav {background: #590F1D;}
+nav {
+    background: #590F1D;
+}
 
 ul {
     list-style: none;
@@ -43,18 +51,20 @@ ul > li {
     padding: 0 1.5rem;
 }
 
-ul > li:hover {cursor: pointer;}
+ul > li:hover {
+    cursor: pointer;
+}
 
 /* 3. PARALLAX AND INTRO*/
 #restaurantImg {
-	width: 100%;
-	height: 80vh;
-	background-image: url(assets/zakaria-zayane-0uAVsDcyD0M-unsplash.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
+    width: 100%;
+    height: 80vh;
+    background-image: url(assets/zakaria-zayane-0uAVsDcyD0M-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 h1 {
@@ -69,7 +79,6 @@ h1 {
     margin: 0 20%;
 }
 
-
 /* 4. MENU NAVIGATION*/
 h2 {
     margin-top: 5rem;
@@ -78,43 +87,42 @@ h2 {
     font-size: 2.5rem;
 }
 
-li > a {
+#menuList a:hover {
+    color: #F2AE2E;
+}
+
+#menuList {
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+#menuList a {
     padding: 0 1.5rem;
     color: black;
     font: 1.2rem grenadine-mvb;
     text-decoration: none;
 }
 
-li > a:hover {color: #F2AE2E;}
-
-ol {
-    text-align: center;
-    list-style: none;
-}
-
-ol > li {
-    display: inline;
-    padding: 2rem;
-    font: 1.3rem Montserrat, sans-serif ;
-}
-
-
 /* 5. GRID*/
-.gridContainer {
+section {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 3vw;
-    margin: 10px 10%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1.5vw 3vw;
+    margin: 0 10%;
     justify-content: space-around;
 }
 
 /* 6. COURSES*/
 h3 {
+    grid-column: 1/-1;
     text-align: center;
     font: 1.5rem Montserrat, sans-serif;
     font-weight: 700;
     font-style: italic;
+    margin-top: 50px;
     margin-bottom: 0;
+    text-transform: capitalize;
 }
 
 p {
@@ -130,22 +138,23 @@ h4 {
     font-weight: 600;
     margin: 0.5rem;
     text-align: center;
+    height: 40px;
 }
 
 .foodItem {
     display: flex;
     flex-direction: column;
     align-items: center;
-	width: 100%;
-	background-color: rgba(191, 169, 142, 0.2);
-	transition: 0.5s;
+    width: 300px;
+    background-color: rgba(191, 169, 142, 0.2);
+    transition: 0.5s;
     position: relative;
 }
 
 .foodItem:hover {
-	background-color: rgba(191, 169, 142, 0.25);
-	transition: 0.5s;
-	box-shadow: 0px 0px 25px 4px rgba(0,0,0,0.15);
+    background-color: rgba(191, 169, 142, 0.25);
+    transition: 0.5s;
+    box-shadow: 0px 0px 25px 4px rgba(0, 0, 0, 0.15);
 }
 
 .imgFood {
@@ -153,7 +162,7 @@ h4 {
     height: 200px;
     object-fit: cover;
     border-radius: 100%;
-    box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 20px 7px rgba(0, 0, 0, 0.1);
 }
 
 .orderBtn {
@@ -166,6 +175,7 @@ h4 {
     font: 1.5rem Montserrat, sans-serif;
     font-weight: 700;
     transition: 0.4s;
+    margin-top: auto;
 }
 
 .orderBtn:hover {
@@ -173,4 +183,150 @@ h4 {
     transition: 0.4s;
     background-color: rgba(242, 174, 46, 1);
     cursor: pointer;
+}
+
+.soldOutP {
+    color: white;
+    font-size: 4em;
+    font-weight: bolder;
+    position: absolute;
+    top: 5%;
+}
+
+.price {
+    background-color: rgba(242, 174, 46, 0.5);
+    border-radius: 100%;
+    font-size: 1.5em;
+    padding: 1vh;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    font-style: normal;
+}
+
+.sale {
+    background-color: rgba(242, 89, 75, 0.5);
+    border-radius: 100%;
+    font-size: 1.5em;
+    padding: 1vh;
+    position: absolute;
+    right: 10%;
+    top: 35%;
+    font-style: normal;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 7. FOOTER */
+
+footer {
+    margin-top: 4vh;
+    padding: 10px;
+    background-color: #590F1D;
+    color: white;
+}
+
+
+/* 8. MODAL*/
+
+.moreInfo {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modalBackground {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modalContent {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 2em;
+    width: 40%;
+}
+
+.modalName {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.modalDescr {
+    margin: 4rem;
+}
+
+.modalImg {
+    width: 40%;
+}
+
+.modalPrice {
+    font-size: 2.5rem;
+}
+
+/* 9. MEDIA QUERIES */
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenu img {
+    filter: invert(1);
+    padding: 1vh;
+}
+
+@media screen and (max-width: 600px) {
+    .mobileMenu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    #restaurantDescr {
+        font-size: 0.8rem;
+        margin: 5%;
+    }
+
+    #menuList {
+        flex-flow: column;
+    }
+
+    #menuList a {
+        text-align: center;
+    }
+
+    .modalContent {
+        padding: 1em;
+        width: 90%;
+    }
+
+    .modalDescr {
+        font-size: 0.9rem;
+        margin: 5%;
+    }
+
+    .modalImg {
+        width: 90%;
+    }
+
 }
